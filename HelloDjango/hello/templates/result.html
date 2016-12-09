@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择题</title>
+    <style type="text/css">
+      td { vertical-align: top;  }
+      td > div { padding: 10px; border: 1px solid #f90; }
+    </style>
+  </head>
+  <body>
+    <table cellspacing="30" width="100%">
+      <tr>
+        <td width="120" contenteditable="true"><div>YourQuestion</div></td>
+        <td><div contenteditable="true">{{message.question}}</div></td>
+      </tr>
+      <tr>
+        <td><div contenteditable="true">QuestionAnswer</div></td>
+        <td><div contenteditable="true">{{message.ansa}}<br>
+                                        {{message.ansb}}<br>
+                                        {{message.ansc}}<br>
+                                        {{message.ansd}}</div></td>
+      </tr>
+      <tr>
+        <td><div contenteditable="true">LuceneResult</div></td>
+        <td><div contenteditable="true">{% for i in message.path %}
+                                        {{ i }}<br>
+                                        {% endfor %}
+        </div></td>
+      </tr>
+      <tr>
+        <td><div contenteditable="true">TF-IDF Result</div></td>
+        <td ><div contenteditable="true">A: {{message.tfa}}<br>
+                                         B: {{message.tfb}}<br>
+                                        C：{{message.tfc}}<br>
+                                        D：{{message.tfd}}<br></div></td>
+      </tr>
+      <tr>
+        <td><div contenteditable="true">final Result</div></td>
+        <td ><div contenteditable="true">{{message.answer}}</div></td>
+      </tr>
+    </table>
+  </body>
+</html>
