@@ -1,5 +1,14 @@
 # kaggle_AIIen_AI2
-kaggle,The Allen AI Science Challenge,Is your model smarter than an 8th grader, QA about American 8th grade science multiple-choice questions
+
+项目介绍:
+
+* kaggle,The Allen AI Science Challenge
+* Is your model smarter than an 8th grader?
+* QA about American 8th grade science multiple-choice questions
+
+项目地址:
+
+* https://www.kaggle.com/c/the-allen-ai-science-challenge
 
 ##1.获取数据
 1. 在 (http://www.ck12.org/) 上爬取与美国八年级科学相关的关键词。
